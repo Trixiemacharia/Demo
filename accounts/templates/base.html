@@ -11,10 +11,10 @@
             <a href="{% url 'admin-panel' %}">Admin Panel</a>
             <a href="{% url 'user-page' %}">User Page</a>
             <a href="{% url 'logout' %}">Logout</a>
-            {%else%}
+            {% else %}
             <a href="{%url 'login'%}">Login</a>
-            <a href="{% url 'signup'%}">signup</a>
-            {%endif%}
+            <a href="{% url 'register'%}">Register</a>
+            {% endif %}
         </nav>
         {% if messages %}
         <ul>
